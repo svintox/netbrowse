@@ -14,6 +14,7 @@ body {
     font-size:12.5px;
     color:#404040;
     background-color:#ffffff;
+    margin:0px;
 }
 table {
     font-size:inherit;
@@ -44,16 +45,28 @@ h1, h2, h3, h4, h5, h6 {
     font-family:'Roboto Condensed', 'Arial Narrow';
     font-weight:normal;
 }
+.material-icons {
+    vertical-align:-3px;
+    color:#006080;
+}
+.headerZone {
+    background-color:#f0f0f0;
+    border-bottom:1px solid #c0c0c0;
+    width:100%;
+    display:block;
+    padding:20px;
+}
+.headerZone h2 {
+    display:block;
+    margin:0 auto;
+    max-width:800px;
+}
 .contentZone {
     display:block;
     margin:0 auto;
     max-width:800px;
 }
-.material-icons {
-    font-size:inherit;
-    vertical-align:-5px;
-    color:#006080;
-}
+
 .foldericon {
     font-size:inherit;
     color:#ffe090;

@@ -10,8 +10,11 @@ include("system/boot.php");
 <script src="system/script.js"></script>
 <body>
 
+<div class="headerZone">
+  <h2><span class="material-icons">cloud_circle</span> NetBrowse v1.0</h2>
+</div>
+
 <div class="contentZone">
-  <h2>NetBrowse v1.0</h2>
   <?php
     if ($SystemState == "setup")
       {
