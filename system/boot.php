@@ -8,6 +8,41 @@ if (file_exists("config.php"))
   }
 
 
+// Check login and save session data
+
+if (isset($_POST["username"]) && isset($_POST["password"]))
+  {
+    if (($_POST["username"] == $netBrowseAdmin) && ($_POST["password"] == $netBrowsePass))
+      {
+        $_SESSION["netBrowseAdmin"] = $_POST["username"];
+        $_SESSION["netBrowsePass"] = $_POST["password"];
+      }
+  }
+
+
+// Check session, confirm username and password
+
+if (isset($_SESSION["netBrowseAdmin"]) && isset($_SESSION["netBrowsePass"]))
+  {
+    if (($_SESSION["netBrowseAdmin"] == $netBrowseAdmin) && ($_SESSION["netBrowsePass"] == $netBrowsePass))
+      {
+        $SystemState = "authenticated";
+      }
+    else
+      {
+        session_unset();
+      }
+  }
+
+
+// Logout
+
+if (isset($_GET["logout"]))
+  {
+    session_unset();
+  }
+
+
 // Load folder
 
 chdir("../");
