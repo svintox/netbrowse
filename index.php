@@ -11,7 +11,15 @@ include("system/boot.php");
 <body>
 
 <div class="headerZone">
-  <h2><span class="material-icons">cloud_circle</span> NetBrowse v1.0</h2>
+  <h2>
+    <a href="index.php"><span class="material-icons">cloud_circle</span> NetBrowse v1.0</a>
+    <?php
+    if ($SystemState == "authenticated")
+      {
+        echo("<span style='float:right'><a href='index.php?logout'><span class='material-icons'>logout</span></a></span>");
+      }
+    ?>
+  </h2>
 </div>
 
 <div class="contentZone">
