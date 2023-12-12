@@ -9,6 +9,8 @@ input {font-family:inherit;font-size:inherit;color:inherit}
 ul li ul {display:none}
 h1, h2, h3, h4, h5, h6 {font-family:'Roboto Condensed', 'Arial Narrow';font-weight:normal}
 
+.contentZone {display:block;margin:0 auto;max-width:800px}
+
 .foldericon {font-size:inherit;color:#ffe090;vertical-align:middle;margin-right:5px}
 .fileicon {font-size:inherit;color:#c0c0c0;vertical-align:middle;margin-right:5px}
 .deleteicon {font-size:inherit;color:#ff6060;vertical-align:middle;margin-right:5px}
