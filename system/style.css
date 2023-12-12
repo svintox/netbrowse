@@ -52,7 +52,6 @@ h1, h2, h3, h4, h5, h6 {
 .headerZone {
     background-color:#f0f0f0;
     border-bottom:1px solid #c0c0c0;
-    width:100%;
     display:block;
     padding:20px;
 }
@@ -60,6 +59,7 @@ h1, h2, h3, h4, h5, h6 {
     display:block;
     margin:0 auto;
     max-width:800px;
+    padding:0px;
 }
 .contentZone {
     display:block;

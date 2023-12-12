@@ -56,6 +56,7 @@ if (isset($_SESSION["netBrowseAdmin"]) && isset($_SESSION["netBrowsePass"]))
 if (isset($_GET["logout"]))
   {
     session_unset();
+    $SystemState = "login";
   }
 
 
