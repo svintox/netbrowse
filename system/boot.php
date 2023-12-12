@@ -1,10 +1,26 @@
 <?php
+session_start();
 
 $SystemState = "setup";
 
-if (file_exists("config.php"))
+if (file_exists("system/config.php"))
   {
+    include("config.php");
     $SystemState = "login";
+  }
+else
+  {
+    if (isset($_POST["username"]) && isset($_POST["password"]))
+      {
+        $ConfigFile = fopen("system/config.php", "w") or die("Unable to create config file!");
+        $ConfigData = "<?php\n\n";
+        $ConfigData .= "\$netBrowseAdmin = \"" . $_POST["username"] . "\";\n";
+        $ConfigData .= "\$netBrowsePass = \"" . $_POST["password"] . "\";\n\n\n";
+        $ConfigData .= "?>";
+        fwrite($ConfigFile, $ConfigData);
+        fclose($ConfigFile);
+        $ConsoleLog .= $ConfigData . "\n\n";
+      }
   }
 
 
