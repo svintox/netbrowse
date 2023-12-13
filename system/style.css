@@ -11,7 +11,7 @@ a:hover {
 }
 body {
     font-family:'Open Sans', sans-serif;
-    font-size:12.5px;
+    font-size:13px;
     color:#404040;
     background-color:#ffffff;
     margin:0px;
@@ -86,10 +86,10 @@ h1 .material-icons, h2 .material-icons {
     display:inline-block;
 }
 .folderIcon {
-    color:#ffe090;
+    color:#ffc080;
 }
 .fileIcon {
-    color:#c0c0c0;
+    color:#00a0c0;
 }
 .deleteIcon {
     color:#ff6060;

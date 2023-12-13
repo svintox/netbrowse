@@ -16,7 +16,7 @@ include("system/boot.php");
 
 <div class="headerZone">
   <h2>
-    <a href="index.php"><span class="material-icons">cloud_circle</span> NetBrowse v1.0</a>
+    <a href="index.php"><span class="material-icons folderIcon">folder_special</span> NetBrowse v1.0</a>
     <?php
     if ($SystemState == "authenticated")
       {
