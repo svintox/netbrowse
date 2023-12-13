@@ -19,7 +19,8 @@ else
         $ConfigData .= "?>";
         fwrite($ConfigFile, $ConfigData);
         fclose($ConfigFile);
-        $ConsoleLog .= $ConfigData . "\n\n";
+        include("config.php");
+        $SystemState = "login";
       }
   }
 
