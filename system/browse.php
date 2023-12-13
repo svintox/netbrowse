@@ -1,6 +1,6 @@
 
 
-<table border="0px" cellspacing="0px" cellpadding="10px" width="100%">
+<table border="0px" cellspacing="0px" cellpadding="0px" width="100%">
   <tr valign="middle">
     <td>
       <h1><i class="material-icons foldericon">&#xE2C8;</i>
@@ -36,25 +36,23 @@
     </td>
 
     <?php
-      echo("<form action='?f={$currentDir}' method='post' id='createFolderForm'>");
-      echo("<td width=80 align='right'>");
-      echo("<input type='button' value='Add Folder..' onclick='createFolder()' class='cmsButton'>");
+      echo("<td align='right'>");
+      echo("<form action='?f={$currentDir}' method='post' id='createFolderForm' style='display:inline-block;margin-right:10px'>");
+      echo("<button onclick='createFolder()'>Add Folder..</button>");
       echo("<input type='hidden' name='f' value='{$currentDir}'>");
       echo("<input type='hidden' name='newFolder' id='newFolder'>");
-      echo("</td>");
       echo("</form>");
-      echo("<form enctype='multipart/form-data' action='?f={$currentDir}' method='post' id='uploadForm'>");
-      echo("<td width=80 align='right'>");
-      echo("<input type='button' value='Upload File..' onclick='uploadFile()' class='cmsButton'>");
+      echo("<form enctype='multipart/form-data' action='?f={$currentDir}' method='post' id='uploadForm' style='display:inline-block'>");
+      echo("<button onclick='uploadFile()'>Upload file..</button>");
       echo("<input type='hidden' name='f' value='{$currentDir}'>");
       echo("<input type='file' name='fileToUpload' id='fileToUpload' onchange='document.all.uploadForm.submit()' style='display:none'>");
-      echo("</td>");
       echo("</form>");
+      echo("</td>");
     ?>
   </tr>
 </table>
 
-<table border=0 cellspacing=0 cellpadding=10 width="800px">
+<table border=0 cellspacing=0 cellpadding=10 width="100%">
   <?php
 
     // List mapper
