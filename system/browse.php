@@ -37,15 +37,15 @@
     <td align="right" style="white-space:nowrap">
       <?php
       echo("<form action='?f=" . $currentDir . "' method='post' id='createFolderForm' style='display:inline-block'>");
-      echo("<button onclick='createFolder()'><span class='material-icons'>create_new_folder</span><span class='hideOnMobile'> New Folder</span></button>");
       echo("<input type='hidden' name='f' value='" . $currentDir . "'>");
-      echo("<input type='hidden' name='newFolder' id='newFolderInput' onchange='document.getElementById(\"createFolderForm\").submit()'>");
+      echo("<input type='hidden' name='newFolder' id='newFolderInput'>");
       echo("</form>");
       echo("<form enctype='multipart/form-data' action='?f=" . $currentDir . "' method='post' id='uploadForm' style='display:inline-block'>");
-      echo("<button onclick='uploadFile()' style='margin-left:10px'><span class='material-icons'>upload_file</span><span class='hideOnMobile'> Upload File</span></button>");
       echo("<input type='hidden' name='f' value='" . $currentDir . "'>");
       echo("<input type='file' name='fileToUpload' id='fileToUpload' onchange='document.getElementById(\"uploadForm\").submit()' style='display:none'>");
       echo("</form>");
+      echo("<button onclick='createFolder()'><span class='material-icons'>create_new_folder</span><span class='hideOnMobile'> New Folder</span></button>");
+      echo("<button onclick='uploadFile()' style='margin-left:10px'><span class='material-icons'>upload_file</span><span class='hideOnMobile'> Upload File</span></button>");
       ?>
     </td>
   </tr>

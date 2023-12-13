@@ -26,5 +26,6 @@ let createFolderDialog = prompt("Name the folder to be created:");
 if (createFolderDialog != null)
   {
   document.getElementById("newFolderInput").value = createFolderDialog;
+  document.getElementById("createFolderForm").submit();
   }
 }
