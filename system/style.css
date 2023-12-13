@@ -59,11 +59,13 @@ h1 .material-icons, h2 .material-icons {
     background-color:#f0f0f0;
     border-bottom:1px solid #c0c0c0;
     display:block;
+    width:100%;
 }
 .headerZone h2 {
     display:block;
+    margin:0px;
     margin:0 auto;
-    width:109%;
+    width:100%;
     max-width:800px;
     padding:20px;
     box-sizing:border-box;
@@ -71,7 +73,7 @@ h1 .material-icons, h2 .material-icons {
 .contentZone {
     display:block;
     margin:0 auto;
-    width:109%;
+    width:100%;
     max-width:800px;
     padding:20px;
     box-sizing:border-box;

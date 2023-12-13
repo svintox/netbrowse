@@ -2,6 +2,7 @@
 include("system/boot.php");
 ?>
 
+<!DOCTYPE html>
 <html>
   <head>
     <title>NetBrowse</title>
@@ -19,7 +20,7 @@ include("system/boot.php");
     <?php
     if ($SystemState == "authenticated")
       {
-        echo("<span style='float:right'><a href='index.php?logout'><span class='material-icons'>logout</span></a></span>");
+        echo("<span style='float:right;display:inline-block'><a href='index.php?logout'><span class='material-icons'>logout</span></a></span>");
       }
     ?>
   </h2>

@@ -1,7 +1,7 @@
 
 
 <table border="0px" cellspacing="0px" cellpadding="0px" width="100%">
-  <tr valign="top">
+  <tr valign="middle">
     <td>
       <h1>
         <span class="material-icons">folder_open</span>
@@ -34,15 +34,15 @@
         ?>
       </h1>
     </td>
-    <td align="right">
+    <td align="right" style="white-space:nowrap">
       <?php
-      echo("<form action='?f={$currentDir}' method='post' id='createFolderForm' style='display:inline-block;margin-right:10px'>");
+      echo("<form action='?f={$currentDir}' method='post' id='createFolderForm' style='display:inline-block'>");
       echo("<button onclick='createFolder()'><span class='material-icons'>create_new_folder</span><span class='hideOnMobile'> New Folder</span></button>");
       echo("<input type='hidden' name='f' value='{$currentDir}'>");
       echo("<input type='hidden' name='newFolder' id='newFolder'>");
       echo("</form>");
       echo("<form enctype='multipart/form-data' action='?f={$currentDir}' method='post' id='uploadForm' style='display:inline-block'>");
-      echo("<button onclick='uploadFile()'><span class='material-icons'>upload_file</span><span class='hideOnMobile'> Upload File</span></button>");
+      echo("<button onclick='uploadFile()' style='margin-left:10px'><span class='material-icons'>upload_file</span><span class='hideOnMobile'> Upload File</span></button>");
       echo("<input type='hidden' name='f' value='{$currentDir}'>");
       echo("<input type='file' name='fileToUpload' id='fileToUpload' onchange='document.all.uploadForm.submit()' style='display:none'>");
       echo("</form>");
@@ -51,7 +51,7 @@
   </tr>
 </table>
 
-<table border=0 cellspacing=0 cellpadding=10 width="100%">
+<table border="0" cellspacing="0" cellpadding="10px" width="100%">
   <?php
 
     // List mapper
