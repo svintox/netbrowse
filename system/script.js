@@ -21,11 +21,10 @@ var openFileDialog = document.getElementById("fileToUpload").click();
 
 function createFolder()
 {
-var createFolderDialog = window.prompt("Name the folder to be created:");
+let createFolderDialog = prompt("Name the folder to be created:");
 
 if (createFolderDialog != null)
   {
-  document.getElementById("newFolder").value = createFolderDialog;
-  document.getElementById("createFolderForm").submit();
+  document.getElementById("newFolderInput").value = createFolderDialog;
   }
 }
