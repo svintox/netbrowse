@@ -78,14 +78,20 @@ h1 .material-icons, h2 .material-icons {
     padding:20px;
     box-sizing:border-box;
 }
-
-.foldericon {
+.folderPart {
+    padding:5px;
+    border-radius:3px;
+    background-color:#f0f0f0;
+    margin:5px;
+    display:inline-block;
+}
+.folderIcon {
     color:#ffe090;
 }
-.fileicon {
+.fileIcon {
     color:#c0c0c0;
 }
-.deleteicon {
+.deleteIcon {
     color:#ff6060;
 }
 

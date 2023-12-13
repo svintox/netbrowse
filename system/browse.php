@@ -3,8 +3,8 @@
 <table border="0px" cellspacing="0px" cellpadding="0px" width="100%">
   <tr valign="middle">
     <td>
-      <h1>
-        <span class="material-icons">folder_open</span>
+      <h2>
+        <span class="material-icons folderIcon">folder_open</span>
         <?php
 
         // Mappelinje
@@ -24,15 +24,15 @@
               }
             if ($pathItem == ".")
               {
-                echo("<a href='?f=" . $folderString . "'>Root</a> / ");
+                echo("<a href='?f=" . $folderString . "' class='folderPart'>Root</a><span class='material-icons'>navigate_next</span>");
               }
             else
               {
-                echo("<a href='?f=" . $folderString . "'>" . $pathItem . "</a> / ");
+                echo("<a href='?f=" . $folderString . "' class='folderPart'>" . $pathItem . "</a><span class='material-icons'>navigate_next</span>");
               }
           }
         ?>
-      </h1>
+      </h2>
     </td>
     <td align="right" style="white-space:nowrap">
       <?php
@@ -68,7 +68,7 @@
                 $mappeantall = count($mapper) - 2 . " items";
                 echo("<tr valign='middle' onmouseover='this.style.backgroundColor=\"#f0f0f0\";' onmouseout='this.style.backgroundColor=\"initial\";'>");
                 echo("<td>");
-                echo("<a href='?f=" . $currentDir . "/" . $mappe . "'><i class='material-icons foldericon'>&#xE2C7;</i> " . $mappe . "</a></td>");
+                echo("<a href='?f=" . $currentDir . "/" . $mappe . "'><span class='material-icons folderIcon'>folder</span> " . $mappe . "</a></td>");
                 echo("<td align='right'>");
                 echo($mappeantall . "</td>");
                 echo("<td align='right'>");
