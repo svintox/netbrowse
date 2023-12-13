@@ -3,11 +3,14 @@ include("system/boot.php");
 ?>
 
 <html>
-<head>
-<title>NetBrowse</title>
-</head>
-<link href="system/style.css" rel="stylesheet">
-<script src="system/script.js"></script>
+  <head>
+    <title>NetBrowse</title>
+    <link href="system/style.css" rel="stylesheet">
+    <script src="system/script.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#00a0b0">
+  </head>
 <body>
 
 <div class="headerZone">
