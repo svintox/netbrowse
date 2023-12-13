@@ -1,10 +1,10 @@
 
 
 <table border="0px" cellspacing="0px" cellpadding="0px" width="100%">
-  <tr valign="middle">
+  <tr valign="top">
     <td>
-      <h1><i class="material-icons foldericon">&#xE2C8;</i>
-
+      <h1>
+        <span class="material-icons">folder_open</span>
         <?php
 
         // Mappelinje
@@ -34,21 +34,20 @@
         ?>
       </h1>
     </td>
-
-    <?php
-      echo("<td align='right'>");
+    <td align="right">
+      <?php
       echo("<form action='?f={$currentDir}' method='post' id='createFolderForm' style='display:inline-block;margin-right:10px'>");
-      echo("<button onclick='createFolder()'>Add Folder..</button>");
+      echo("<button onclick='createFolder()'><span class='material-icons'>create_new_folder</span><span class='hideOnMobile'> New Folder</span></button>");
       echo("<input type='hidden' name='f' value='{$currentDir}'>");
       echo("<input type='hidden' name='newFolder' id='newFolder'>");
       echo("</form>");
       echo("<form enctype='multipart/form-data' action='?f={$currentDir}' method='post' id='uploadForm' style='display:inline-block'>");
-      echo("<button onclick='uploadFile()'>Upload file..</button>");
+      echo("<button onclick='uploadFile()'><span class='material-icons'>upload_file</span><span class='hideOnMobile'> Upload File</span></button>");
       echo("<input type='hidden' name='f' value='{$currentDir}'>");
       echo("<input type='file' name='fileToUpload' id='fileToUpload' onchange='document.all.uploadForm.submit()' style='display:none'>");
       echo("</form>");
-      echo("</td>");
-    ?>
+      ?>
+    </td>
   </tr>
 </table>
 

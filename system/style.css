@@ -48,6 +48,11 @@ h1, h2, h3, h4, h5, h6 {
 .material-icons {
     vertical-align:-3px;
     color:#006080;
+    font-size:18px;
+}
+h1 .material-icons, h2 .material-icons {
+    vertical-align:-5px;
+    font-size:24px;
 }
 .headerZone {
     background-color:#f0f0f0;
@@ -70,22 +75,13 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .foldericon {
-    font-size:inherit;
     color:#ffe090;
-    vertical-align:middle;
-    margin-right:5px;
 }
 .fileicon {
-    font-size:inherit;
     color:#c0c0c0;
-    vertical-align:middle;
-    margin-right:5px;
 }
 .deleteicon {
-    font-size:inherit;
     color:#ff6060;
-    vertical-align:middle;
-    margin-right:5px;
 }
 
 @media only screen and (max-width:800px)
