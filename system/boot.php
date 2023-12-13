@@ -15,7 +15,7 @@ else
         $ConfigFile = fopen("system/config.php", "w") or die("Unable to create config file!");
         $ConfigData = "<?php\n\n";
         $ConfigData .= "\$netBrowseAdmin = \"" . $_POST["username"] . "\";\n";
-        $ConfigData .= "\$netBrowsePass = \"" . $_POST["password"] . "\";\n\n\n";
+        $ConfigData .= "\$netBrowsePass = \"" . $_POST["password"] . "\";\n\n";
         $ConfigData .= "?>";
         fwrite($ConfigFile, $ConfigData);
         fclose($ConfigFile);
